@@ -14,7 +14,7 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
-  "nxCloudId": "670d6e49904da6533b7e6e74",
+  "nxCloudId": "6717d7421d458eed3d5d993b",
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",
@@ -24,17 +24,10 @@
         "previewTargetName": "preview"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
     {
       "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      },
+      "options": { "targetName": "test" },
       "exclude": ["apps/hotel-reservations-workspace-e2e/**/*"]
     }
   ]
